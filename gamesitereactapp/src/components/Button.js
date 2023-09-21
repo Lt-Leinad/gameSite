@@ -1,11 +1,12 @@
 export default function Button(props) {
-  return <button style={ButtonStyle}>{props.name}</button>;
+  return <button className="Button">{props.name}</button>;
 }
 
-const ButtonStyle = {
-  height: "calc(50vh / 3)",
-  width: "calc(50vw / 3)",
-  minWidth: "106px",
-  border: "1px solid black",
-  backgroundColor: "#ffffff",
-};
+// const ButtonStyle = {
+//   maxWidth: "268px",
+//   aspectRatio: "1/1",
+//   fontSize: "16px",
+//   minWidth: "108px",
+//   border: "2px solid black",
+//   backgroundColor: "#ffffff",
+// };

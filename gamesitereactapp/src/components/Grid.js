@@ -2,27 +2,16 @@ import Button from "./Button";
 
 export default function Grid(props) {
   return (
-    <div style={GridStyle}>
-      <Button name="reactions" />
-      <Button name="memory" />
-      <Button name="logic" />
-      <Button name="attention to detail" />
-      <Button name="ingenuity" />
+    <div className="gridandtitle">
+      <h1 className="Title">Intelligames</h1>
+      <div className="grid">
+        <Button name="reactions" />
+        <Button name="memory" />
+        <Button name="logic" />
+        <Button name="a2d" />
+        <Button name="ingenuity" />
+        <Button name="a2d" />
+      </div>
     </div>
   );
 }
-
-const GridStyle = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  border: "2px solid red",
-  height: "50%",
-  width: "50%",
-  minWidth: "318px",
-  display: "grid",
-  gridTemplateColumns: "auto auto auto",
-  gridTemplateRows: "auto auto auto",
-  placeItems: "center",
-};
