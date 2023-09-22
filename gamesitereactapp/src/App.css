@@ -37,3 +37,79 @@
   padding: 20px;
   gap: 20px;
 }
+
+@media only screen and (orientation: landscape) {
+  .grid {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+  }
+}
+
+@keyframes ballMove {
+  from {
+    margin-left: 0px;
+  }
+
+  to {
+    margin-left: calc(100% - 10px);
+  }
+}
+
+.reactions-container {
+  max-width: 640px;
+  min-width: 280px;
+  border: 2px solid #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: clip;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.reactions-container h1 {
+  border-bottom: 1px solid #000000;
+}
+
+.track {
+  width: 120%;
+  height: 40px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ball {
+  border-radius: 100%;
+  background-color: #000000;
+  width: 10px;
+  height: 10px;
+}
+
+.lives {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.goal {
+  background-color: rgb(79, 185, 79);
+  width: 20px;
+  height: 40px;
+  z-index: -1;
+  position: absolute;
+  left: calc(50% - 10px);
+}
+
+.ballMoveClass {
+  animation-name: ballMove;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+  margin-left: calc(100% - 10px);
+}
